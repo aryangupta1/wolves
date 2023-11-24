@@ -20,14 +20,14 @@ export default function HomePage() {
           <Grid item xs={12} md={6}>
             <Card className="mb-4 shadow-lg">
               <CardContent>
-                <Typography variant="h2" component="h1" gutterBottom color="primary">
-                  Wolves Futsal Stats Admin
+                <Typography variant="h4" component="h1" gutterBottom color="primary">
+                  Wolves Stats Admin
                 </Typography>
                 <Typography variant="h5" color="textSecondary" gutterBottom>
                   With great power comes great responsibility
                 </Typography>
                 <Typography paragraph>
-                  Random paragraph text
+                  Note to self: Photoshop Mikey and Evan into photo
                 </Typography>   
                 <CardMedia>
                 <Image
