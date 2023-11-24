@@ -24,14 +24,14 @@ export default function HomePage() {
         </Grid>
         <Grid item xs={12} md={6}>
           <Paper elevation={5} style={{ padding: '2rem' }}>
-            {/* <Image
-              src="/futsal_team.jpg" // Replace with your image path
+            <Image
+              src="/images/wolves.jpg" // Replace with your image path
               alt="Wolves Futsal Team"
               layout="responsive"
               width={500}
               height={300}
               objectFit="cover"
-            /> */}
+            />
           </Paper>
         </Grid>
       </Grid>
