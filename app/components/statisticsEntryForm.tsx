@@ -179,6 +179,7 @@ export const StatisticsEntryForm: React.FC<Props> = ({ onAddStats }) => {
           </Button>
         </Box>
       )}
+      <br></br>
     </Box>
   )
 }
