@@ -21,21 +21,15 @@ export default function HomePage() {
             <Card className="mb-4 shadow-lg">
               <CardContent>
                 <Typography variant="h2" component="h1" gutterBottom color="primary">
-                  Wolves Futsal Club
+                  Wolves Futsal Stats Admin
                 </Typography>
                 <Typography variant="h5" color="textSecondary" gutterBottom>
-                  Uniting Passion and Excellence
+                  With great power comes great responsibility
                 </Typography>
                 <Typography paragraph>
-                  Join the Wolves in our quest for futsal glory...
-                </Typography>
-                <Button variant="contained" color="primary" size="large">
-                  View Season Stats
-                </Button>
-              </CardContent>
-            </Card>
-            <Card elevation={6} className="shadow-lg">
-              <CardMedia>
+                  Random paragraph text
+                </Typography>   
+                <CardMedia>
                 <Image
                   src="/images/wolves.jpg"
                   alt="Wolves Futsal Team"
@@ -45,9 +39,9 @@ export default function HomePage() {
                   objectFit="cover"
                 />
               </CardMedia>
+              </CardContent>
             </Card>
           </Grid>
-          {/* Additional content for news and matches */}
         </Grid>
       </Box>
       <StatisticsEntryForm onAddStats={(newStats) => setStatsList([...statsList, newStats])} />
@@ -55,7 +49,6 @@ export default function HomePage() {
         dataLength={statsList.length}
         next={fetchMoreData}
         hasMore={hasMore}
-        loader={<h4>Loading...</h4>}
       >
         <StatisticsList statsList={statsList} />
       </InfiniteScroll>
