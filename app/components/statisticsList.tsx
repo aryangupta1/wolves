@@ -31,7 +31,7 @@ export const StatisticsList: React.FC<Props> = ({ statsList }) => {
               <Typography variant="body2">Goal Scorers: {stats.goalScorers}</Typography>
               <Typography variant="body2">Biggest Win: {stats.biggestWin}</Typography>
               <Typography variant="body2">Biggest Flop: {stats.biggestFlop}</Typography>
-              <Typography variant="body2">Quote of the Day: "{stats.quoteOfTheDay}"</Typography>
+              <Typography variant="body2">Quote of the Day: {stats.quoteOfTheDay}</Typography>
             </CardContent>
           </Card>
         </Grid>

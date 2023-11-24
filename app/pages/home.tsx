@@ -49,6 +49,7 @@ export default function HomePage() {
         dataLength={statsList.length}
         next={fetchMoreData}
         hasMore={hasMore}
+        loader={<h4></h4>}
       >
         <StatisticsList statsList={statsList} />
       </InfiniteScroll>
