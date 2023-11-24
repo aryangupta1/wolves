@@ -21,7 +21,7 @@ export const StatisticsList: React.FC<Props> = ({ statsList }) => {
     <Grid container spacing={2} className="mb-4">
       {statsList.map((stats, index) => (
         <Grid item xs={12} sm={6} md={3} key={index}>
-          <Card className="shadow-lg rounded bg-blue-50 hover:bg-blue-100">
+          <Card className="mb-4 shadow-lg">
             <CardContent>
               <Typography variant="h6" color="primary" gutterBottom>
                 Game on: {stats.date}
