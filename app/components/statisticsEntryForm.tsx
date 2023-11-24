@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { TextField, Button } from '@mui/material'
 
 interface GameStats {
   date: string
@@ -53,72 +54,91 @@ export const StatisticsEntryForm: React.FC<Props> = ({ onAddStats }) => {
 
   return (
     <form className="space-y-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
-      <input
+      <TextField
         type="date"
         name="date"
         value={stats.date}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Date"
+        label="Date"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <input
+      <TextField
         type="text"
         name="opponent"
         value={stats.opponent}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Opponent"
+        label="Opponent"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <input
+      <TextField
         type="number"
         name="goalsScored"
-        value={stats.goalsScored}
+        value={stats.goalsScored.toString()}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Goals Scored"
+        label="Goals Scored"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <input
+      <TextField
         type="number"
         name="goalsConceded"
-        value={stats.goalsConceded}
+        value={stats.goalsConceded.toString()}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Goals Conceded"
+        label="Goals Conceded"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <input
+      <TextField
         type="text"
         name="goalScorers"
         value={stats.goalScorers}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Goal Scorers"
+        label="Goal Scorers"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <input
+      <TextField
         type="text"
         name="biggestWin"
         value={stats.biggestWin}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Biggest Win"
+        label="Biggest Win"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <input
+      <TextField
         type="text"
         name="biggestFlop"
         value={stats.biggestFlop}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Biggest Flop"
+        label="Biggest Flop"
+        variant="outlined"
+        fullWidth
+        className="mb-4"
       />
-      <textarea
+      <TextField
+        type="text"
         name="quoteOfTheDay"
         value={stats.quoteOfTheDay}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        placeholder="Quote of the Day"
+        label="Quote of the Day"
+        variant="outlined"
+        fullWidth
+        multiline
+        rows={4}
+        className="mb-4"
       />
-      <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      <Button type="submit" variant="contained" color="primary" className="w-full">
         Submit
-      </button>
+      </Button>
     </form>
   )
 }
