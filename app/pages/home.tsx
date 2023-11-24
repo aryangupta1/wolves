@@ -6,7 +6,7 @@ import { StatisticsEntryForm } from '../components/statisticsEntryForm'
 import { StatisticsList } from '../components/statisticsList'
 
 export default function HomePage() {
-  const [statsList, setStatsList] = useState([])
+  const [statsList, setStatsList] = useState([]) as any
   const [hasMore, setHasMore] = useState(true)
 
   const fetchMoreData = () => {
