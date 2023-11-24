@@ -29,7 +29,7 @@ export const StatisticsEntryForm: React.FC<Props> = ({ onAddStats }) => {
   })
 
   const [showForm, setShowForm] = useState(false)
-  const formRef = useRef(null)
+  const formRef = useRef(null) as any
 
   const handleShowForm = () => {
     setShowForm(true)
